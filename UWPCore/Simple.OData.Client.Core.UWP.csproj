@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CAF52087-E2E2-4E3C-BA85-6523CB9FC976}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UWPCore</RootNamespace>
+    <AssemblyName>UWPCore</AssemblyName>
+    <DefaultLanguage>fr-FR</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17134.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.14393.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Adapter\AdapterFactory.cs" />
+    <Compile Include="Adapter\AdapterVersion.cs" />
+    <Compile Include="Adapter\BatchWriterBase.cs" />
+    <Compile Include="Adapter\CommandFormatterBase.cs" />
+    <Compile Include="Adapter\FunctionFormat.cs" />
+    <Compile Include="Adapter\IBatchWriter.cs" />
+    <Compile Include="Adapter\ICommandFormatter.cs" />
+    <Compile Include="Adapter\IMetadata.cs" />
+    <Compile Include="Adapter\IODataAdapter.cs" />
+    <Compile Include="Adapter\IODataModelAdapter.cs" />
+    <Compile Include="Adapter\IRequestWriter.cs" />
+    <Compile Include="Adapter\IResponseReader.cs" />
+    <Compile Include="Adapter\MetadataBase.cs" />
+    <Compile Include="Adapter\ODataAdapterBase.cs" />
+    <Compile Include="Adapter\ODataModelAdapterBase.cs" />
+    <Compile Include="Adapter\RequestWriterBase.cs" />
+    <Compile Include="Adapter\ResponseNode.cs" />
+    <Compile Include="Adapter\ResponseReaderBase.cs" />
+    <Compile Include="CustomConverters.cs" />
+    <Compile Include="EntityCollection.cs" />
+    <Compile Include="EntryDetails.cs" />
+    <Compile Include="Expressions\ColumnExpression.cs" />
+    <Compile Include="Expressions\ExpressionContext.cs" />
+    <Compile Include="Expressions\ExpressionFunction.cs" />
+    <Compile Include="Expressions\FunctionMapping.cs" />
+    <Compile Include="Expressions\ODataExpression.cs" />
+    <Compile Include="Expressions\ODataExpression.Format.cs" />
+    <Compile Include="Expressions\ODataExpression.Linq.cs" />
+    <Compile Include="Expressions\ODataExpression.Operators.cs" />
+    <Compile Include="Extensions\DictionaryExtensions.cs" />
+    <Compile Include="Extensions\EnumerableOfKeyValuePairExtensions.cs" />
+    <Compile Include="Extensions\HomogenizeEx.cs" />
+    <Compile Include="Extensions\MemberInfoExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Extensions\WebRequestExtensions.cs" />
+    <Compile Include="Extensions\XElementExtensions.cs" />
+    <Compile Include="Fluent\BoundClient.Async.cs" />
+    <Compile Include="Fluent\BoundClient.cs" />
+    <Compile Include="Fluent\ClientWithRequest.cs" />
+    <Compile Include="Fluent\ClientWithResponse.cs" />
+    <Compile Include="Fluent\CommandDetails.cs" />
+    <Compile Include="Fluent\FluentClientBase.cs" />
+    <Compile Include="Fluent\FluentCommand.cs" />
+    <Compile Include="Fluent\IBoundClient.cs" />
+    <Compile Include="Fluent\IClientWithRequest.cs" />
+    <Compile Include="Fluent\IClientWithResponse.cs" />
+    <Compile Include="Fluent\IFluentClient.cs" />
+    <Compile Include="Fluent\IMediaClient.cs" />
+    <Compile Include="Fluent\IRequestBuilder.cs" />
+    <Compile Include="Fluent\IUnboundClient.cs" />
+    <Compile Include="Fluent\MediaClient.cs" />
+    <Compile Include="Fluent\RequestBuilder.cs" />
+    <Compile Include="Fluent\UnboundClient.cs" />
+    <Compile Include="Http\HttpConnection.cs" />
+    <Compile Include="Http\HttpLiteral.cs" />
+    <Compile Include="Http\RequestRunner.cs" />
+    <Compile Include="Http\RestVerbs.cs" />
+    <Compile Include="Http\WebRequestException.cs" />
+    <Compile Include="INameMatchResolver.cs" />
+    <Compile Include="IODataClient.cs" />
+    <Compile Include="IPluralizer.cs" />
+    <Compile Include="ISession.cs" />
+    <Compile Include="MetadataCache.cs" />
+    <Compile Include="NameMatchResolvers.cs" />
+    <Compile Include="ODataBatch.cs" />
+    <Compile Include="ODataClient.Async.cs" />
+    <Compile Include="ODataClient.cs" />
+    <Compile Include="ODataClient.Internals.cs" />
+    <Compile Include="ODataClientSettings.cs" />
+    <Compile Include="ODataEntry.cs" />
+    <Compile Include="ODataEntryAnnotations.cs" />
+    <Compile Include="ODataExpandOptions.cs" />
+    <Compile Include="ODataFeedAnnotations.cs" />
+    <Compile Include="ODataLiteral.cs" />
+    <Compile Include="ODataMediaAnnotations.cs" />
+    <Compile Include="ODataNamespace.cs" />
+    <Compile Include="ODataPayloadFormat.cs" />
+    <Compile Include="ODataProtocolVersion.cs" />
+    <Compile Include="ODataRequest.cs" />
+    <Compile Include="ODataResponse.cs" />
+    <Compile Include="ODataTrace.cs" />
+    <Compile Include="ODataUpdateMethod.cs" />
+    <Compile Include="Pluralizer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="SimplePluralizer.cs" />
+    <Compile Include="UnresolvableObjectException.cs" />
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="Properties\UWPCore.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.1.5</Version>
+    </PackageReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
