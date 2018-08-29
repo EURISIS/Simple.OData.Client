@@ -12,8 +12,8 @@ namespace Simple.OData.Client
 {
     class AdapterFactory
     {
-        private const string AdapterV3AssemblyName = "Simple.OData.Client.V3.Adapter";
-        private const string AdapterV4AssemblyName = "Simple.OData.Client.V4.Adapter";
+        private const string AdapterV3AssemblyName = "Simple.OData.Client.V3.Adapter.UWP";
+        private const string AdapterV4AssemblyName = "Simple.OData.Client.V4.Adapter.UWP";
         private const string AdapterV3TypeName = "Simple.OData.Client.V3.Adapter.ODataAdapter";
         private const string AdapterV4TypeName = "Simple.OData.Client.V4.Adapter.ODataAdapter";
         private const string ModelAdapterV3TypeName = "Simple.OData.Client.V3.Adapter.ODataModelAdapter";
